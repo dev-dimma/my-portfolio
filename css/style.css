@@ -2,19 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
 
 :root {
-  --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
-  --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
-}
-
-body.dark {
   --bg-black-900: #151515;
   --bg-black-100: #222222;
   --bg-black-50: #393939;
   --text-black-900: #ffffff;
   --text-black-700: #e9e9e9;
+}
+
+body.dark {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
 }
 
 body {
@@ -161,13 +161,13 @@ ul {
   font-weight: 700;
   padding: 15px 20px;
   font-size: 30px;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   position: relative;
 }
 
 .aside .logo a span {
   font-family: "Clicker Script", cursive;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .aside .logo a::before {
@@ -635,6 +635,47 @@ h3.my-profession {
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
+}
+
+.portfolio-img-desc {
+  color: var(--text-black-700);
+  text-align: center;
+}
+
+.portfolio-img-desc h2 {
+  color: var(--skin-color);
+  padding: 15px 0 12px 0;
+}
+
+.portfolio-img-desc-techs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.portfolio-img-desc-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-img-desc-icons p:first-of-type {
+  background-color: var(--skin-color);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-black-700);
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.portfolio-img-desc-icons p:last-of-type {
+  background-color: var(--bg-black-50);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-black-700);
+  margin-bottom: 10px;
+  width: 40%;
 }
 
 /* Contact */
