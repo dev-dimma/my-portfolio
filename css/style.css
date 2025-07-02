@@ -643,12 +643,14 @@ h3.my-profession {
 }
 
 .portfolio-img-desc h2 {
-  color: var(--skin-color);
+  color: var(--text-black-700);
   padding: 15px 0 12px 0;
 }
 
 .portfolio-img-desc-techs {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-around;
   margin-bottom: 10px;
 }
@@ -656,6 +658,10 @@ h3.my-profession {
 .portfolio-img-desc-icons {
   display: flex;
   justify-content: space-around;
+}
+
+.portfolio-img-desc-icons p a {
+   color: var(--text-black-700);
 }
 
 .portfolio-img-desc-icons p:first-of-type {
